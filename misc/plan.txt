@@ -1,5 +1,8 @@
-Rotates screen randomly
-Controls cursor to press on a random point on a screen
-Does this script run forever
+Ideas:
+
+- Rotates screen randomly
+- Controls cursor to press on a random point on a screen
+- Does this script run forever
+- Open notepad and write funny messages
 
 Python file will be turned into an exe, so it can run on any computer even without python
