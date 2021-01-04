@@ -2,6 +2,10 @@ import pyautogui
 import random
 import time 
 import json
+import string
+
+# Set this to True if you're testing the script
+pyautogui.FAILSAFE = False
 
 WIDTH, HEIGHT = pyautogui.size()
 
@@ -11,13 +15,12 @@ def spam_click(amount, delay):
         y = random.randrange(1, HEIGHT)
 
         pyautogui.click(x, y)
-        # pyautogui.click()
-
+       
         time.sleep(delay)
 
 def threat_message(amount):
     messages_data = None
-    with open("./src/keyboard-messages.json") as f:
+    with open("./keyboard-messages.json") as f:
         messages_data = json.load(f)
     
     for i in range(amount):
@@ -28,6 +31,22 @@ def threat_message(amount):
         for x in range(random.randrange(15, 20)):
             pyautogui.write(message_chosen)
             pyautogui.press("enter")
+
+def destroy_keyboard():
+    for x in range(50):
+        pyautogui.write(random.choice(string.ascii_lowercase))
+        pyautogui.press("enter")
+        time.sleep(0.0125)
+
+def end():
+    open_app("notepad")
+    time.sleep(1)
+
+    for x in range(random.randrange(15, 20)):
+        pyautogui.write("YOU JUST GOT TROLLED, I'M SORRY")
+        pyautogui.press("enter")
+
+    pyautogui.write("I'm leaving you along now, peace!")
 
 def alt_f4():
     pyautogui.hotkey("alt", "f4")

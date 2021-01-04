@@ -1,12 +1,7 @@
+# Incase you messed up the screen position, you can use this script to put it back in place
+
 import win32api
 import win32con
-import time
-
-# Directions
-# 90 - Left
-# 180 - Upside Down
-# 270 - Right
-# 0 - Default
 
 def change_display_direction(angle):
     device = win32api.EnumDisplayDevices(None,0)
@@ -36,15 +31,4 @@ def change_display_direction(angle):
     
     win32api.ChangeDisplaySettingsEx(device.DeviceName,dm)
 
-if __name__ == "__main__":
-    print("Starting in 2 seconds!")
-    time.sleep(2)
-    change_display_direction(90)
-    time.sleep(2)
-    change_display_direction(180)
-    time.sleep(2)
-    change_display_direction(270)
-    time.sleep(2)
-    change_display_direction(0)
-    print("Finished!")
-
+change_display_direction(0)
