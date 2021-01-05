@@ -46,7 +46,7 @@ def end():
         pyautogui.write("YOU JUST GOT TROLLED, I'M SORRY")
         pyautogui.press("enter")
 
-    pyautogui.write("I'm leaving you along now, peace!")
+    pyautogui.write("I'm leaving you alone now, peace!")
 
 def alt_f4():
     pyautogui.hotkey("alt", "f4")
