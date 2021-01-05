@@ -15,7 +15,4 @@ Python
 
 ## Disclamer: Please do not use this script for illegal use, use it for fun ONLY. Whatever happens with you using this script, I would NOT be held responsible.
 
-### Extra Notes:
-If you have any ideas for FUNNY virus idea, feel free to contact me at mynameiscutepanda@gmail.com and I will try to make it come true!
-
 # Enjoy and Stay Safe!!!
