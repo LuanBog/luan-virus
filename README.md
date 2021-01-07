@@ -13,6 +13,10 @@ LuanBog / Luan
 ## Programming Language
 Python
 
+## Source
+
+The virus file can be found in: ./src/app.exe
+
 ## Disclamer: Please do not use this script for illegal use, use it for fun ONLY. Whatever happens with you using this script, I would NOT be held responsible.
 
 # Enjoy and Stay Safe!!!
